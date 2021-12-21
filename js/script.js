@@ -17,6 +17,14 @@ $(document).ready(function() {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
+
+    $('.more-btn').click(function() {
+        $('.more').toggleClass("active");
+        $(this).text(function(i, text){
+            return text === "更多" ? "更少" : "更多";
+        })
+
+    })
 });
 // typing animation script
 

@@ -121,13 +121,13 @@ FFAAA7
 
 @keyframes color-change {
     0% {
-        color: #ECDBBA;
+        color: #191919;
     }
 
     25% {
         color: hsl(204, 66%, 59%);
     }
-
+ 
     50% {
         color: #a3db5a;
     }

@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-
+    
 }
 
 
@@ -188,16 +188,13 @@ FFAAA7
     color: #ECDBBA;
     background: none;
 }
-
-
-/* about section styling */
-
-section.about {
-    padding: 100px 0;
+/* all similar styling */
+section.about, section.services {
+    
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.about .title {
+section .title {
     color: #191919;
     position: relative;
     text-align: center;
@@ -207,7 +204,7 @@ section.about {
     padding-bottom: 20px;
 }
 
-.about .title::before {
+section .title::before {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -218,8 +215,7 @@ section.about {
     transform: translateX(-50%);
 }
 
-.about .title::after {
-    content: "关于";
+section .title::after {
     position: absolute;
     color: #C84B31;
     bottom: -12px;
@@ -230,7 +226,18 @@ section.about {
     transform: translateX(-50%);
 }
 
-.about .about-content {
+/* about section styling */
+section.about {
+    padding: 100px 0;
+}
+
+
+.about .title::after {
+    content: "关于";
+}
+
+.about .about-content,
+.services .serv-content {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -317,6 +324,63 @@ section.about {
     background: none;
     color: #191919;
 }
+
+/* services section styling */
+.services {
+    background-color: #191919;
+}
+
+.services .title {
+    padding-top: 100px;
+    color: #ECDBBA;
+}
+.services .title::before {
+    background: #ECDBBA;
+}
+.services .title::after {
+    content: "服务";
+    background: #191919;
+}
+
+.services .serv-content {
+    color:#ECDBBA
+}
+
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    background-color: #3f3f3f;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 200px;
+    margin: 10px;
+}
+
+.services .serv-content .card:hover {
+    background:#C84B31;
+}
+
+.services .serv-content .card .box {
+    margin:30px 10px;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color:#C84B31;
+}
+
+.services .serv-content .card:hover i{
+    color:#3f3f3f;
+}
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500px;
+    margin: 10px  7px ;
+}
 /* responsive media query start */
 @media (max-width: 1550px){
     .home .max-width {
@@ -329,9 +393,7 @@ section.about {
     }
 }
 
-@media (max-width: 1100px){
 
-}
 
 @media (max-width: 900px) {
     .max-width {
@@ -415,3 +477,8 @@ section.about {
 
 }
 
+@media (max-width: 700px){
+    .services .serv-content .card {
+        width:100%;
+    }
+}

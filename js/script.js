@@ -18,7 +18,7 @@ $(document).ready(function() {
         $('.menu-btn i').toggleClass("active");
     });
 
-    $('.more-btn').click(function() {
+    $('.more-btn-about').click(function() {
         $('.more').toggleClass("active");
         $(this).text(function(i, text){
             return text === "更多" ? "更少" : "更多";
@@ -29,7 +29,7 @@ $(document).ready(function() {
 // typing animation script
 
 let typed = new Typed(".typing", {
-    strings: ["程序员", "教师", "AI研究生", "音乐爱好者", "译者"],
+    strings: ["程序员", "教师", "研究生", "音乐爱好者", "译者"],
     typeSpeed: 300,
     backSpeed: 100,
     loop: true

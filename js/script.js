@@ -51,7 +51,7 @@ var slider = tns({
     container: '.my-slider',
     items: 3,
     loop: true,
-    // gutter: 60,
+    // gutter: 10,
     "swipeAngle": false,
     // autoplay: true,
     // autoplayHoverPause: true,

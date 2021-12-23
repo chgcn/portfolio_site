@@ -18,13 +18,18 @@ $(document).ready(function() {
         $('.menu-btn i').toggleClass("active");
     });
 
+    // toggle about more button script and button text
     $('.more-btn-about').click(function() {
         $('.more').toggleClass("active");
         $(this).text(function(i, text){
             return text === "更多" ? "更少" : "更多";
         })
+    });
 
-    })
+    // owl carousel script
+    // $('.carousel').owlCarousel({
+
+    // });
 });
 // typing animation script
 
@@ -41,3 +46,41 @@ let aboutTyped = new Typed(".aboutTyping", {
     backSpeed: 50,
     loop: true
 });
+
+var slider = tns({
+    container: '.my-slider',
+    items: 3,
+    loop: true,
+    // gutter: 60,
+    "swipeAngle": false,
+    // autoplay: true,
+    // autoplayHoverPause: true,
+    // autoplayTimeout: 3000,
+    controls: false,
+    // mode: "gallery",
+    nav: true,
+    mouseDrag: true,
+    // fixedWidth: 500,
+    // "autoWidth": true,
+    // slideBy: "page",
+    // center: true,
+    navPosition: "bottom",
+    responsive: {
+      0: {
+
+        items: 1,
+        // nav: false
+      },
+      600: {
+        items: 2,
+
+        // nav: false
+      },
+      1000: {
+        items: 3,
+
+        // gutter: 30
+        // nav: false
+      }
+    }
+  });

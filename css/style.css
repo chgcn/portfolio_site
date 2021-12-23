@@ -26,24 +26,24 @@ FFAAA7
 
 @keyframes shake {
     0% {
-        transform: translate(1px, 1px) rotate(0deg);
+        transform: translate(0px, 0px) rotate(0deg);
     }
 
     30% {
-        transform: translate(3px, 2px) rotate(-5deg);
+        transform: translate(-3px, -3px) rotate(-10deg);
     }
 
     60% {
-        transform: translate(-3px, 1px) rotate(5deg);
+        transform: translate(3px, 3px) rotate(-5deg);
     }
-
+ 
     90% {
-        transform: translate(1px, 2px) rotate(0deg);
+        transform: translate(-3px, -3px) rotate(0deg); 
     }
 
 }
 
-/* navbar styleling */
+/* navbar styling */
 
 .navbar {
     position: fixed;
@@ -81,7 +81,7 @@ FFAAA7
 .navbar .logo a img:hover {
     /* filter: invert(33%) sepia(37%) saturate(4695%) hue-rotate(351deg) brightness(88%) contrast(75%); */
     transition: none;
-    animation: shake 0.5s;
+    animation: shake 0.6s;
     animation-iteration-count: 1;
 }
 
@@ -297,6 +297,21 @@ section .title::after {
 
 }
 
+.services, .interests {
+    background-color: #191919;
+
+}
+
+.services .title, .interests .title{
+    color: #ECDBBA;
+}
+
+.services .title::before, 
+.interests .title::before
+{
+    background: #ECDBBA;
+}
+
 /* about section styling */
 
 .about .title::after {
@@ -364,32 +379,21 @@ section .title::after {
     text-align: justify;
 }
 
+
 /* services section styling */
-.services {
-    background-color: #191919;
-
-}
-
-.services .title {
-    color: #ECDBBA;
-}
-
-.services .title::before {
-    background: #ECDBBA;
-}
 
 .services .title::after {
     content: "服务";
     background: #191919;
 }
 
-.services .serv-content {
+.services .serv-content, .interests .inter-content {
     color: #ECDBBA
 }
 
 .services .serv-content .card {
     width: calc(33% - 20px);
-    background-color: #3f3f3f;
+    /* background-color: #2f2f2f; */
     text-align: center;
     border-radius: 6px;
     cursor: pointer;
@@ -416,7 +420,7 @@ section .title::after {
 }
 
 .services .serv-content .card:hover i {
-    color: #3f3f3f;
+    color: #2f2f2f;
 }
 
 .services .serv-content .card .text {
@@ -430,8 +434,6 @@ section .title::after {
 }
 
 /* skills section styling */
-
-
 .skills .title::before {
     background: #191919;
 }
@@ -474,7 +476,7 @@ section .title::after {
 .skills .skills-content .right .line {
     height: 5px;
     width: 100%;
-    background: #3f3f3f;
+    background: #2f2f2f;
     position: relative;
 }
 
@@ -517,6 +519,86 @@ section .title::after {
 
 .line.react::before {
     width: 10%;
+}
+
+/* interests section styling */
+.interests .title::after {
+    content:"兴趣";
+    background: #191919;
+    color: #2D4263;
+}
+
+.interests .carousel .card {
+    /* background: #2f2f2f; */
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    /* margin: 10px; */
+    /* width: 100px; */
+    height: 300px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.interests .carousel .card:hover {
+    background-color:#2D4263;
+    
+}
+
+.interests .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.interests .carousel .card:hover i{
+    color:#2f2f2f;
+}
+
+
+.interests .carousel .card .box {
+    display: flex; 
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.interests .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px;
+}
+.interests .carousel .card i {
+    color:#2D4263;
+    font-size: 50px;
+}
+
+.tns-nav {
+    text-align: center;
+    margin: 10px;
+    
+    /* width: 30px; */
+}
+
+.tns-nav button {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none;
+    border-radius: 50%;
+    border:3px solid #2D4263;
+    transition: all 0.3 ease;
+    background: #191919;
+    /* width: 30px; */
+}
+
+.tns-nav .tns-nav-active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.tns-nav .tns-nav-active,
+.tns-nav button:hover {
+    background:#2D4263;
 }
 
 /* responsive media query start */

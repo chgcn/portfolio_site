@@ -10,6 +10,10 @@
 
 }
 
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 
 /* website palette
 191919
@@ -36,9 +40,9 @@ FFAAA7
     60% {
         transform: translate(3px, 3px) rotate(-5deg);
     }
- 
+
     90% {
-        transform: translate(-3px, -3px) rotate(0deg); 
+        transform: translate(-3px, -3px) rotate(0deg);
     }
 
 }
@@ -127,7 +131,7 @@ FFAAA7
     25% {
         color: hsl(204, 66%, 59%);
     }
- 
+
     50% {
         color: #a3db5a;
     }
@@ -302,13 +306,12 @@ section .title::after {
 
 }
 
-.services .title, .interests .title{
+.services .title, .interests .title {
     color: #ECDBBA;
 }
 
-.services .title::before, 
-.interests .title::before
-{
+.services .title::before,
+.interests .title::before {
     background: #ECDBBA;
 }
 
@@ -399,6 +402,7 @@ section .title::after {
     cursor: pointer;
     /* height: 250px; */
     margin: 10px;
+    transition: all 0.3s ease;
 }
 
 .services .serv-content .card:hover {
@@ -523,15 +527,15 @@ section .title::after {
 
 /* interests section styling */
 .interests .title::after {
-    content:"兴趣";
+    content: "兴趣";
     background: #191919;
     color: #2D4263;
 }
 
 .interests .carousel .card {
     /* background: #2f2f2f; */
-    border-radius: 6px;
-    padding: 25px 35px;
+    /* border-radius: 6px;*/
+    padding: 20px 20px;
     text-align: center;
     /* margin: 10px; */
     /* width: 100px; */
@@ -540,24 +544,26 @@ section .title::after {
     cursor: pointer;
 }
 
-.interests .carousel .card:hover {
-    background-color:#2D4263;
-    
+.interests .carousel .card .box:hover {
+    background-color: #2D4263;
+
 }
 
-.interests .carousel .card:hover .box {
+.interests .carousel .card .box:hover  {
     transform: scale(1.05);
 }
 
-.interests .carousel .card:hover i{
-    color:#2f2f2f;
+.interests .carousel .card .box:hover i {
+    color: #2f2f2f;
 }
 
 
 .interests .carousel .card .box {
-    display: flex; 
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
@@ -567,15 +573,16 @@ section .title::after {
     font-weight: 500;
     margin: 10px;
 }
+
 .interests .carousel .card i {
-    color:#2D4263;
+    color: #2D4263;
     font-size: 50px;
 }
 
 .tns-nav {
     text-align: center;
-    margin: 10px;
-    
+    margin: 20px;
+
     /* width: 30px; */
 }
 
@@ -585,7 +592,7 @@ section .title::after {
     margin: 0 5px;
     outline: none;
     border-radius: 50%;
-    border:3px solid #2D4263;
+    border: 3px solid #2D4263;
     transition: all 0.3 ease;
     background: #191919;
     /* width: 30px; */
@@ -598,7 +605,7 @@ section .title::after {
 
 .tns-nav .tns-nav-active,
 .tns-nav button:hover {
-    background:#2D4263;
+    background: #2D4263;
 }
 
 /* responsive media query start */

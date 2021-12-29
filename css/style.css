@@ -11,7 +11,7 @@
 }
 
 * {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -228,7 +228,7 @@ FFAAA7
 }
 
 /* all similar styling */
-section.about, section.services, .skills {
+section.about, section.services, .skills, .interests, .contact {
 
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -293,7 +293,8 @@ section .title::after {
 
 .about .about-content,
 .services .serv-content,
-.skills .skills-content {
+.skills .skills-content,
+.contact .contact-content {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -549,7 +550,7 @@ section .title::after {
 
 }
 
-.interests .carousel .card .box:hover  {
+.interests .carousel .card .box:hover {
     transform: scale(1.05);
 }
 
@@ -608,6 +609,124 @@ section .title::after {
     background: #2D4263;
 }
 
+/* contact section styling */
+.contact .title::after {
+    content: "联系";
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+    width: 100%
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 20px;
+
+}
+
+.contact .contact-content .row i {
+    font-size: 25px;
+}
+
+.contact .contact-content .row i.fa-map-marker-alt {
+    font-size: 30px;
+}
+
+.contact .contact-content .row i.fa-envelope {
+    font-size: 23px;
+}
+
+.contact .contact-content .row .info .head {
+    font-weight: 600;
+
+}
+
+.contact .contact-content .row .info .sub-title {
+    color: #191919;
+
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .email {
+    margin-left: 10px;
+}
+
+.contact .right form .textarea {
+    height: 100px;
+}
+
+.contact .right form .field input,
+.contact .right form .field.textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    /* font-family: 'Source'; */
+}
+
+.contact .right form .field.textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button input {
+    display: inline-block;
+    background: #191919;
+    color: #ECDBBA;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    /* margin-top: 5px; */
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 3px solid #191919;
+    transition: all 0.3s ease;
+    font-family: 'STZhongsong';
+    cursor: pointer;
+}
+
+.contact .right form .button input:hover {
+    background: none;
+    color: #191919;
+}
+
 /* responsive media query start */
 @media (max-width: 1550px) {
     .home .max-width {
@@ -661,7 +780,8 @@ section .title::after {
     }
 
     .services .serv-content .card,
-    .skills .skills-content .column {
+    .skills .skills-content .column,
+    .contact .contact-content .column {
         width: 100%;
     }
 }

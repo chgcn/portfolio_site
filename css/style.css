@@ -614,7 +614,7 @@ section .title::after {
 
 /* contact section styling */
 .contact .title::after {
-    content: "联系";
+    content: "实验";
 }
 
 .contact .contact-content .column {

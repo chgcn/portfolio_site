@@ -390,7 +390,7 @@ section .title::after {
 /* services section styling */
 
 .services .title::after {
-    content: "服务";
+    content: "兴趣";
     background: #191919;
 }
 
@@ -531,7 +531,7 @@ section .title::after {
 
 /* interests section styling */
 .interests .title::after {
-    content: "兴趣";
+    content: "爱好";
     background: #191919;
     color: #2D4263;
 }
@@ -614,7 +614,7 @@ section .title::after {
 
 /* contact section styling */
 .contact .title::after {
-    content: "实验";
+    content: "My Music";
 }
 
 .contact .contact-content .column {
@@ -757,9 +757,9 @@ footer span a {
 
 
 
-@media (max-width: 1100px) {}
+/* @media (max-width: 1100px) {} */
 
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
     .home .home-content .text-2 {
         font-size: 45px;
         font-weight: 600;
@@ -794,11 +794,7 @@ footer span a {
 
     }
 
-    .services .serv-content .card,
-    .skills .skills-content .column,
-    .contact .contact-content .column {
-        width: 100%;
-    }
+
 }
 
 
@@ -852,5 +848,11 @@ footer span a {
         color: #ECDBBA;
         display: inline-block;
         margin: 20px 0;
+    }
+
+    .services .serv-content .card,
+    .skills .skills-content .column,
+    .contact .contact-content .column {
+        width: 100%;
     }
 }

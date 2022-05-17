@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
     <title>Steven's Page</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico" />
@@ -26,10 +32,10 @@
             <ul class="menu">
                 <li><a href="#home">首页</a></li>
                 <li><a href="#about">关于</a></li>
-                <li><a href="#services">服务</a></li>
-                <li><a href="#skills">技能</a></li>
                 <li><a href="#interests">兴趣</a></li>
-                <li><a href="#">实验</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#hobbies">爱好</a></li>
+                <li><a href="#music">音乐</a></li>
                 <!-- <li><a href="#contact"></a></li> -->
             </ul>
             <div class="menu-btn">
@@ -45,7 +51,7 @@
                 <div class="text-1">你好，我叫</div>
                 <div class="text-2">陈<span class="rainbow">虹</span>光。</div>
                 <div class="text-3">砥砺前行的<span class="typing">程序员</span></div>
-                <a href="#">聊一聊</a>
+                <a href="#footer">聊一聊</a>
             </div>
         </div>
     </section>
@@ -58,50 +64,48 @@
 
                 <div class="column left">
 
-                    <img src="img/marcel-strauss-kE5rCUvFNx8-unsplash.jpg" alt=""> 
-                    
+                    <!-- <img src="img/marcel-strauss-kE5rCUvFNx8-unsplash.jpg" alt="">  -->
+                    <div id="sketchTraffic-container"></div>
 
                 </div>
                 <div class="column right">
                     <div class="text">Hi I'm Steven and I’m a <span class="aboutTyping">programmer</span></div>
-                    <p>我来自四川成都，研究生专业是计算机技术，研究方向是AI和深度学习。但我发现相比科研自己更喜欢做实际开发工作，尤其是与包含设计与用户交互的网站前端。这是我学习前端开发的测试网站，包含了一些介绍和小项目。
+                    <p>我来自四川成都，研究生专业是计算机技术，主要是AI和深度学习。这是我学习前端开发的测试网站。
                     </p>
                     <br>
-                    <p class="more">我目前在某高校任教。工作之余我还喜欢听音乐、做音乐、看电影、读书、玩游戏、旅游、写博客、翻译文章等。</p>
+                    <p class="more">我目前在某高校任教。我还喜欢听音乐、做音乐、看电影、阅读、玩游戏、旅游、写博客、翻译文章等。</p>
                     <br class="more" />
-                    <p>I’m from Chengdu, China. I have a master's degree in Computer Science, during which I
-                        learned some deep learning and have published some papers. But I'm more into actual programming
-                        than pure research, especially front-end development which concerns UI
-                        design and UX. This is my portforlio site for learning front-end development.
+                    <p>I’m from Chengdu, China. I have degrees in Computer Science and Electronic Engineering. I want to explore front-end development which concerns UI
+                        design and UX. This is the site for just that.
                     </p>
                     <br class="more">
-                    <p class="more">I'm currently teaching at a private university. Apart from work, I enjoy listening
+                    <p class="more">I'm currently teaching at a private university. I also enjoy listening
                         to music, making music,
-                        reading, watching movies, gaming, traveling, blogging, translating etc. </p>
+                        reading, watching movies, gaming, traveling, blogging, translating, etc. </p>
                     <a class="more-btn-about" href="#/">更多</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- serevices section start -->
-    <section class="services" id="services">
+    <!-- interests section start -->
+    <section class="services" id="interests">
         <div class="max-width">
-            <h2 class="title">SERVICES</h2>
+            <h2 class="title">INTERESTS</h2>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-palette"></i>
-                        <div class="text">网站设计</div>
-                        <p>学习中。</p>
+                        <div class="text">Art</div>
+                        <p>People often have this idea that art is just something nice, something decorative. No, for me, art is essential. It is fundamental to my well-being and purpose on earth.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-code"></i>
-                        <div class="text">前端开发</div>
-                        <p>学习中。</p>
+                        <div class="text">Coding</div>
+                        <p>Not a good programmer by a long shot, but still trying. Computers are deterministic, and always behave, which may or may not be good.</p>
 
                     </div>
                 </div>
@@ -109,8 +113,8 @@
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-chalkboard-teacher"></i>
-                        <div class="text">编程教育</div>
-                        <p>学习中。</p>
+                        <div class="text">Education</div>
+                        <p>Never thought I'd be a teacher, but here I am. Because somehow teaching is less soul-crushing than professional programming.</p>
                     </div>
                 </div>
 
@@ -124,10 +128,8 @@
             <h2 class="title">SKILLS</h2>
             <div class="skills-content">
                 <div class="column left">
-                    <div class="text">My programming skills & experiences.</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, voluptas, necessitatibus
-                        accusamus dolores error aut rem quibusdam ullam ut iste dolorum blanditiis assumenda modi cumque
-                        autem, id possimus maiores odit.</p>
+                    <div class="text">Some stuff I may or may not know</div>
+                    <p>This section is just an excuse for showcasing those hard-coded progress bars. It is by no means an honest portryal of my actual level of proficency in these things.</p>
                     <a class="more-btn-skills" href="#/">更多</a>
                 </div>
 
@@ -201,73 +203,52 @@
     </section>
 
     <!-- interests section start -->
-    <section class="interests" id="interests">
+    <section class="interests" id="hobbies">
         <div class="max-width">
             <div class="inter-content">
-                <h2 class="title">INTERESTS</h2>
+                <h2 class="title">OTHER INTERESTS</h2>
                 <div class="carousel my-slider">
                     <div class="card">
                         <div class="box">
                             <i class="fas fa-drum"></i>
-                            <div class="text">音乐</div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati delectus sed
-                                molestias
-                                reiciendis id nam, excepturi quis voluptates porro, expedita blanditiis eum sit vel!
-                                Impedit,
-                                quo? Fugiat quidem voluptatibus modi.</p>
+                            <div class="text">Music</div>
+                            <p>谁不爱音乐？</p>
+
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
                             <i class="fas fa-film"></i>
-                            <div class="text">电影</div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati delectus sed
-                                molestias
-                                reiciendis id nam, excepturi quis voluptates porro, expedita blanditiis eum sit vel!
-                                Impedit,
-                                quo? Fugiat quidem voluptatibus modi.</p>
+                            <div class="text">Films</div>
+                            <p>它是通往另一个世界的窗口。</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
                             <i class="fas fa-book"></i>
-                            <div class="text">书籍</div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati delectus sed
-                                molestias
-                                reiciendis id nam, excepturi quis voluptates porro, expedita blanditiis eum sit vel!
-                                Impedit,
-                                quo? Fugiat quidem voluptatibus modi.</p>
+                            <div class="text">Reading</div>
+                            <p>它是通往另一个世界的另一扇窗口。</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
                             <i class="fas fa-language"></i>
-                            <div class="text">翻译</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium accusamus id tempore
-                                illo facere. Dolorum ea ad sunt voluptates. Quod quas iste incidunt sequi aliquid non
-                                molestias magni molestiae repudiandae.</p>
+                            <div class="text">Translate</div>
+                            <p>我喜欢翻译我喜欢的文章。</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
                             <i class="fas fa-suitcase-rolling"></i>
-                            <div class="text">旅游</div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati delectus sed
-                                molestias
-                                reiciendis id nam, excepturi quis voluptates porro, expedita blanditiis eum sit vel!
-                                Impedit,
-                                quo? Fugiat quidem voluptatibus modi.</p>
+                            <div class="text">Travel</div>
+                            <p>遗憾的是，由于COVID-19，我无法拥有想走就走的旅行。 </p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
                             <i class="fas fa-gamepad"></i>
-                            <div class="text">游戏</div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati delectus sed
-                                molestias
-                                reiciendis id nam, excepturi quis voluptates porro, expedita blanditiis eum sit vel!
-                                Impedit,
-                                quo? Fugiat quidem voluptatibus modi.</p>
+                            <div class="text">Gaming</div>
+                            <p>现在暂时没遇到好玩的游戏。</p>
                         </div>
                     </div>
                 </div>
@@ -275,25 +256,26 @@
         </div>
     </section>
 
-    <!-- contact section start -->
-    <section class="contact" id="contact">
+    <!-- contact section start --> 
+    <section class="contact" id="music">
         <div class="max-width">
-            <h2 class="title">
-                Experimental
+            <h2 class="title" >
+                ♫
             </h2>
-            <div class="contact-content">
-
-                   <iframe frameborder="no" marginwidth="0" marginheight="0" width=330 height=110 src="https://music.163.com/outchain/player?type=1&id=140672127&auto=1&height=90"></iframe>
-
-
-                    
-                </div>
+               <div class="contact-content">
+                <meting-js
+                server="netease"
+                type="album"
+                id="140672127">
+            </meting-js>
+                <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=1&id=140672127&auto=0&height=90"></iframe>                </div> -->
+ </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div id="sketch-container" style="border-radius: 20%;"></div>
+    <footer class="footer" id="footer">
+        <div id="c1"></div>
         <span>
             
             <!-- douban -->
@@ -320,7 +302,7 @@
             </svg></a>
  
             <br>
-            <i class="fas fa-envelope"></i>&nbsp;&nbsp;chgcn@foxmail.com &nbsp;|&nbsp;
+            <i class="fas fa-envelope"></i>&nbsp;&nbsp;chgcn@foxmail.com<br>
             <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Chengdu, Sichuan, China<br>
              <i class="fas fa-copyright"></i> 2021-2022 All rights reserved.
         </span>
@@ -328,7 +310,10 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/sketchTraffic.js"></script>
     <script src="js/sketch.js"></script>
+    <!-- <script src="js/multipleSketch.js"></script> -->
+
 
 </body>
 

@@ -82,6 +82,7 @@ FFAAA7
     padding-top: 10px;
     width: 40px;
     transition: all 0.3s ease;
+    filter: invert(94%) sepia(10%) saturate(845%) hue-rotate(338deg) brightness(97%) contrast(90%);
     /* filter: invert(100%) */
 }
 
@@ -150,7 +151,7 @@ FFAAA7
 }
 
 .navbar .menu li a {
-    color: #191919;
+    color: #ECDBBA;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -190,7 +191,7 @@ FFAAA7
 }
 
 .home .max-width {
-    margin: auto auto auto 1300px;
+    margin: auto auto auto 1200px;
 }
 
 .home .home-content .text-1 {
@@ -745,6 +746,10 @@ footer span a {
 
 /* responsive media query start */
 @media (max-width: 1550px) {
+    .home .home-content {
+        color: #ECDBBA;
+    }
+
     .home .max-width {
         margin-left: 0px;
     }
@@ -811,7 +816,7 @@ footer span a {
     }
 
     .menu-btn i {
-        color: #191919;
+        color: #ECDBBA;
     }
 
     .menu-btn i.sticky {

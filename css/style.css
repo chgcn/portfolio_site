@@ -764,7 +764,7 @@ footer span a {
 
 /* @media (max-width: 1100px) {} */
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
     .home .home-content .text-2 {
         font-size: 45px;
         font-weight: 600;
@@ -782,7 +782,7 @@ footer span a {
     }
 
     .max-width {
-        max-width: 800px
+        max-width: 1300px
     }
 
     .about .about-content .column {
@@ -798,6 +798,7 @@ footer span a {
         flex: 100%;
 
     }
+
 
 
 }

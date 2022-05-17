@@ -24,7 +24,7 @@ let agent = [];
 
 function setup() {
   //createCanvas(1080, 608);
-  let canvas = createCanvas(500, 500);
+  let canvas = createCanvas(390, 390);
   canvas.parent("sketchTraffic-container");
   colorMode(HSB, 360, 100, 100);
   rectMode(CENTER);

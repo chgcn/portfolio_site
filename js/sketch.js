@@ -1,7 +1,7 @@
 let time = 0;
 let vel = NaN; // TWO_PI / 300 assigned in setup()
 let hori_count = 12;
-let vert_count = 7;
+let vert_count = 5;
 let colors = [
   "#F94144",
   "#F65A38",

@@ -232,7 +232,7 @@ FFAAA7
 }
 
 /* all similar styling */
-section.about, section.interests, .skills, .hobbies, .contact, footer {
+section.about, section.interests, .skills, .hobbies, .music, footer {
 
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -298,7 +298,7 @@ section .title::after {
 .about .about-content,
 .interests .serv-content,
 .skills .skills-content,
-.contact .contact-content {
+.music .music-content {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -515,11 +515,11 @@ section .title::after {
 }
 
 .line.python::before {
-    width: 70%;
+    width: 50%;
 }
 
 .line.sql::before {
-    width: 70%;
+    width: 50%;
 }
 
 .line.vue::before {
@@ -613,88 +613,95 @@ section .title::after {
     background: #2D4263;
 }
 
-/* contact section styling */
-.contact .title::after {
+/* music section styling */
+.music .title::after {
     content: "My Music";
 }
 
-.contact .contact-content .column {
+.music .music-content .music-info {
+    max-width: 250px;
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 35px;
+}
+
+.music .music-content .column {
     width: calc(50% - 30px);
 }
 
-.contact .contact-content .text {
+.music .music-content .text {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.contact .contact-content .left p {
+.music .music-content .left p {
     text-align: justify;
     width: 100%
 }
 
-.contact .contact-content .left .icons {
+.music .music-content .left .icons {
     margin: 10px 0;
 }
 
-.contact .contact-content .row {
+.music .music-content .row {
     display: flex;
     height: 70px;
     align-items: center;
 }
 
-.contact .contact-content .row .info {
+.music .music-content .row .info {
     margin-left: 20px;
 
 }
 
-.contact .contact-content .row i {
+.music .music-content .row i {
     font-size: 25px;
 }
 
-.contact .contact-content .row i.fa-map-marker-alt {
+.music .music-content .row i.fa-map-marker-alt {
     font-size: 30px;
 }
 
-.contact .contact-content .row i.fa-envelope {
+.music .music-content .row i.fa-envelope {
     font-size: 23px;
 }
 
-.contact .contact-content .row .info .head {
+.music .music-content .row .info .head {
     font-weight: 600;
 
 }
 
-.contact .contact-content .row .info .sub-title {
+.music .music-content .row .info .sub-title {
     color: #191919;
 
 }
 
-.contact .right form .fields {
+.music .right form .fields {
     display: flex;
 }
 
-.contact .right form .field,
-.contact .right form .fields .field {
+.music .right form .field,
+.music .right form .fields .field {
     height: 45px;
     width: 100%;
     margin-bottom: 15px;
 }
 
-.contact .right form .name {
+.music .right form .name {
     margin-right: 10px;
 }
 
-.contact .right form .email {
+.music .right form .email {
     margin-left: 10px;
 }
 
-.contact .right form .textarea {
+.music .right form .textarea {
     height: 100px;
 }
 
-.contact .right form .field input,
-.contact .right form .field.textarea textarea {
+.music .right form .field input,
+.music .right form .field.textarea textarea {
     height: 100%;
     width: 100%;
     border: 1px solid lightgrey;
@@ -705,12 +712,12 @@ section .title::after {
     /* font-family: 'Source'; */
 }
 
-.contact .right form .field.textarea textarea {
+.music .right form .field.textarea textarea {
     padding-top: 10px;
     resize: none;
 }
 
-.contact .right form .button input {
+.music .right form .button input {
     display: inline-block;
     background: #191919;
     color: #ECDBBA;
@@ -726,7 +733,7 @@ section .title::after {
     cursor: pointer;
 }
 
-.contact .right form .button input:hover {
+.music .right form .button input:hover {
     background: none;
     color: #191919;
 }
@@ -873,7 +880,7 @@ footer .sm-btn a:hover {
 
     .interests .serv-content .card,
     .skills .skills-content .column,
-    .contact .contact-content .column {
+    .music .music-content .column {
         width: 100%;
     }
 }

@@ -43,4 +43,4 @@ var s = function (p) {
   };
 };
 
-var cirlcles = new p5(s, "c1");
+var cirlcles = new p5(s, "footer-sketch");

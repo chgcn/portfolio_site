@@ -741,6 +741,8 @@ section .title::after {
 
 /* footer section styling */
 footer {
+    display: flex;
+    justify-content:space-evenly;
     background: #191919;
     padding: 20px 23px;
     color: #ECDBBA;
@@ -764,6 +766,12 @@ footer .sm-btn a:hover {
     /* display: inline-block; */
     margin-top: -2px;
 
+}
+
+.footer-info 
+{
+    
+    margin-top: 30px;
 }
 
 /* responsive media query start */

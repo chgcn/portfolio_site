@@ -55,6 +55,7 @@ FFAAA7
     width: 100%;
     padding: 15px 0;
     /* font-family: 'Noto Sans SC', sans-serif; */
+    font-family: 'STZhongsong';
     transition: all 0.3s ease;
 }
 
@@ -232,7 +233,7 @@ FFAAA7
 /* all similar styling */
 section.about, section.interests, .skills, .hobbies, .music, footer {
 
-    font-family:  sans-serif;
+    font-family: 'STZhongsong';
 }
 
 section {
@@ -707,7 +708,7 @@ section .title::after {
     outline: none;
     padding: 0 15px;
     font-size: 17px;
-    /* font-family: 'Source'; */
+    font-family: 'STZhongsong';
 }
 
 .music .right form .field.textarea textarea {

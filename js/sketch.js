@@ -1,8 +1,8 @@
 var s = function (p) {
   let time = 0;
   let vel = NaN; // TWO_PI / 300 assigned in setup()
-  let hori_count = 10;
-  let vert_count = 4;
+  let hori_count = 14;
+  let vert_count = 3;
   let colors = [
     "#F94144",
     "#F65A38",
@@ -20,12 +20,12 @@ var s = function (p) {
     "#577590",
   ];
   p.setup = function () {
-    p.createCanvas(170, 170);
+    p.createCanvas(140, 140);
     // canvas1.parent("sketch-container");
     p.noFill();
     p.strokeWeight(3);
     p.blendMode(p.SCREEN);
-    vel = p.TWO_PI / 300;
+    vel = p.TWO_PI / 200;
   };
 
   p.draw = function () {
@@ -33,10 +33,10 @@ var s = function (p) {
     p.background(25, 25, 25);
     for (let y = 0; y < vert_count; y++) {
       for (let t = 0; t < hori_count; t++) {
-        y_pos = p.map(p.sin(time + t / 6 + y / 2), -1, 1, 50, p.width - 70);
+        y_pos = p.map(p.sin(time + t / 6 + y / 1), -1, 1, 50, p.width - 70);
         x_pos = p.map(y, 0, vert_count - 1, 30, p.height - 30);
         p.stroke(colors[t]);
-        p.circle(x_pos, y_pos, 35);
+        p.circle(x_pos, y_pos, 30);
       }
     }
     time += vel;

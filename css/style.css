@@ -757,15 +757,15 @@ footer .sm-btn a:hover {
   margin-top: -2px;
 }
 
-.footer-info {
+footer .footer-info {
   margin-top: 40px;
 }
 
-.footer-container {
+footer .footer-container {
   display: flex;
 }
 
-.footer-separation {
+footer .footer-separation {
   display: flex;
   justify-content: center;
   margin-top: 40px;

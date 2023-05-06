@@ -732,7 +732,7 @@ section .title::after {
 /* footer section styling */
 footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content:center;
   background: #191919;
   padding: 20px 23px;
   color: #ecdbba;
@@ -761,16 +761,7 @@ footer .footer-info {
   margin-top: 40px;
 }
 
-footer .footer-container {
-  display: inline-flex;
-}
 
-footer .footer-separation {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  font-size: 50px;
-}
 
 /* responsive media query start */
 @media (max-width: 1550px) {

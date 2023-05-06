@@ -1,7 +1,7 @@
 var s = function (p) {
   let time = 0;
   let vel = NaN; // TWO_PI / 300 assigned in setup()
-  let hori_count = 12;
+  let hori_count = 10;
   let vert_count = 4;
   let colors = [
     "#F94144",
@@ -33,7 +33,7 @@ var s = function (p) {
     p.background(25, 25, 25);
     for (let y = 0; y < vert_count; y++) {
       for (let t = 0; t < hori_count; t++) {
-        y_pos = p.map(p.sin(time + t / 6 + y / 2), -1, 1, 50, p.width - 50);
+        y_pos = p.map(p.sin(time + t / 6 + y / 2), -1, 1, 50, p.width - 70);
         x_pos = p.map(y, 0, vert_count - 1, 30, p.height - 30);
         p.stroke(colors[t]);
         p.circle(x_pos, y_pos, 35);

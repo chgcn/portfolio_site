@@ -762,11 +762,11 @@ footer .footer-info {
 }
 
 footer .footer-container {
-  display: flex;
+  display: inline-flex;
 }
 
 footer .footer-separation {
-  display: flex;
+
   justify-content: center;
   margin-top: 40px;
   font-size: 50px;

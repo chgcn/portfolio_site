@@ -18,6 +18,7 @@ html {
 2D4263
 C84B31
 ECDBBA
+FAF9F6
 
 rainbow palette
 98DDCA
@@ -51,7 +52,7 @@ FFAAA7
   width: 100%;
   padding: 15px 0;
   /* font-family: 'Noto Sans SC', sans-serif; */
-  font-family: "STZhongsong";
+  font-family: 'STZhongsong';
   transition: all 0.3s ease;
 }
 
@@ -77,8 +78,7 @@ FFAAA7
   padding-top: 10px;
   width: 40px;
   transition: all 0.3s ease;
-  filter: invert(94%) sepia(10%) saturate(845%) hue-rotate(338deg)
-    brightness(97%) contrast(90%);
+  filter: invert(100%);
   /* filter: invert(100%) */
 }
 
@@ -110,7 +110,7 @@ FFAAA7
 }
 
 /* .navbar .logo a.sticky {
-    color: #ECDBBA;
+    color: #FAF9F6;
     font-size: 35px;
     font-weight:500;
     
@@ -147,7 +147,7 @@ FFAAA7
 }
 
 .navbar .menu li a {
-  color: #ecdbba;
+  color: #faf9f6;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -155,7 +155,7 @@ FFAAA7
 }
 
 .navbar .menu li a.sticky {
-  color: #ecdbba;
+  color: #faf9f6;
 }
 
 .navbar .menu li a:hover {
@@ -165,7 +165,7 @@ FFAAA7
 /* menu button styling */
 
 .menu-btn {
-  color: #ecdbba;
+  color: #faf9f6;
   font-size: 23px;
   cursor: pointer;
   display: none;
@@ -175,13 +175,13 @@ FFAAA7
 
 .home {
   display: flex;
-  background: url("../img/fakurian-design-MBgK-AHSrVs-unsplash.jpg") no-repeat
-    center;
+  background: url('../img/fakurian-design-MBgK-AHSrVs-unsplash-small.jpg')
+    no-repeat center;
   background-size: cover;
   height: 100vh;
   color: #191919;
   min-height: 500px;
-  font-family: "STZhongsong", sans-serif;
+  font-family: 'STZhongsong', sans-serif;
 }
 
 .home .max-width {
@@ -210,7 +210,7 @@ FFAAA7
 .home .home-content a {
   display: inline-block;
   background: #191919;
-  color: #ecdbba;
+  color: #faf9f6;
   font-size: 25px;
   padding: 12px 30px;
   margin-top: 10px;
@@ -232,7 +232,7 @@ section.interests,
 .hobbies,
 .music,
 footer {
-  font-family: "STZhongsong";
+  font-family: 'STZhongsong';
 }
 
 section {
@@ -250,7 +250,7 @@ section .title {
 }
 
 section .title::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0px;
   left: 50%;
@@ -275,7 +275,7 @@ section .title::after {
 .more-btn-skills {
   display: inline-block;
   background: #191919;
-  color: #ecdbba;
+  color: #faf9f6;
   font-size: 20px;
   font-weight: 500;
   padding: 10px 20px;
@@ -284,7 +284,7 @@ section .title::after {
   border-radius: 6px;
   border: 2px solid #191919;
   transition: all 0.3s ease;
-  font-family: "STZhongsong";
+  font-family: 'STZhongsong';
 }
 
 .more-btn-about:hover,
@@ -311,18 +311,18 @@ section .title::after {
 
 .interests .title,
 .hobbies .title {
-  color: #ecdbba;
+  color: #faf9f6;
 }
 
 .interests .title::before,
 .hobbies .title::before {
-  background: #ecdbba;
+  background: #faf9f6;
 }
 
 /* about section styling */
 
 .about .title::after {
-  content: "关于";
+  content: '关于';
 }
 
 .about .about-content .left {
@@ -368,7 +368,7 @@ section .title::after {
 }
 
 .about .about-content .right .more.active::after {
-  content: "\00000A";
+  content: '\00000A';
   display: block;
 }
 
@@ -387,13 +387,13 @@ section .title::after {
 /* interests section styling */
 
 .interests .title::after {
-  content: "兴趣";
+  content: '兴趣';
   background: #191919;
 }
 
 .interests .serv-content,
 .hobbies .inter-content {
-  color: #ecdbba;
+  color: #faf9f6;
 }
 
 .interests .serv-content .card {
@@ -445,7 +445,7 @@ section .title::after {
 }
 
 .skills .title::after {
-  content: "技能";
+  content: '技能';
   background: white;
 }
 
@@ -486,7 +486,7 @@ section .title::after {
 }
 
 .skills .skills-content .right .line::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 100%;
   left: 0;
@@ -528,7 +528,7 @@ section .title::after {
 
 /* hobbies section styling */
 .hobbies .title::after {
-  content: "爱好";
+  content: '爱好';
   background: #191919;
   color: #2d4263;
 }
@@ -609,7 +609,7 @@ section .title::after {
 
 /* music section styling */
 .music .title::after {
-  content: "My Music";
+  content: 'My Music';
 }
 
 .music .music-content .music-info {
@@ -700,7 +700,7 @@ section .title::after {
   outline: none;
   padding: 0 15px;
   font-size: 17px;
-  font-family: "STZhongsong";
+  font-family: 'STZhongsong';
 }
 
 .music .right form .field.textarea textarea {
@@ -711,7 +711,7 @@ section .title::after {
 .music .right form .button input {
   display: inline-block;
   background: #191919;
-  color: #ecdbba;
+  color: #faf9f6;
   font-size: 20px;
   font-weight: 500;
   padding: 10px 20px;
@@ -720,7 +720,7 @@ section .title::after {
   border-radius: 6px;
   border: 3px solid #191919;
   transition: all 0.3s ease;
-  font-family: "STZhongsong";
+  font-family: 'STZhongsong';
   cursor: pointer;
 }
 
@@ -732,10 +732,10 @@ section .title::after {
 /* footer section styling */
 footer {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   background: #191919;
   padding: 20px 23px;
-  color: #ecdbba;
+  color: #faf9f6;
   text-align: center;
 }
 
@@ -761,12 +761,10 @@ footer .footer-info {
   margin-top: 40px;
 }
 
-
-
 /* responsive media query start */
 @media (max-width: 1550px) {
   .home .home-content {
-    color: #ecdbba;
+    color: #faf9f6;
   }
 
   .home .max-width {
@@ -829,16 +827,16 @@ footer .footer-info {
   }
 
   .menu-btn i {
-    color: #ecdbba;
+    color: #faf9f6;
   }
 
   .menu-btn i.sticky {
-    color: #ecdbba;
+    color: #faf9f6;
   }
 
   .menu-btn i.active:before {
-    color: #ecdbba;
-    content: "\f00d";
+    color: #faf9f6;
+    content: '\f00d';
   }
 
   .navbar .menu {
@@ -854,7 +852,7 @@ footer .footer-info {
   }
 
   .navbar .menu.active {
-    color: #ecdbba;
+    color: #faf9f6;
     left: 0;
   }
 
@@ -863,7 +861,7 @@ footer .footer-info {
   }
 
   .navbar .menu li a {
-    color: #ecdbba;
+    color: #faf9f6;
     display: inline-block;
     margin: 20px 0;
   }

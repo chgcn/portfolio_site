@@ -92,9 +92,9 @@ FFAAA7
 .navbar .logo a img.sticky {
   padding-top: 10px;
   width: 40px;
-  /* filter: invert(100%) */
-  filter: invert(94%) sepia(10%) saturate(845%) hue-rotate(338deg)
-    brightness(97%) contrast(90%);
+  filter: invert(100%);
+  /* filter: invert(94%) sepia(10%) saturate(845%) hue-rotate(338deg)
+    brightness(97%) contrast(90%); */
   transition: none;
 }
 
